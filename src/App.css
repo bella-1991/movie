@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+
+.app { width: 1200px; margin: 0 auto; padding: 0 15px; }
+
+section { margin: 10px 0; }
+
+/* responsive
+============================ */
+@media screen and (max-width: 1200px) {
+  .app { width: 786px; }
+}
+
+@media screen and (max-width: 768px) {
+  .app { width: 100%; padding: 20px; }
+}

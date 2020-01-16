@@ -1,0 +1,2 @@
+.header { display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
+.header__tag-line { font-style: italic; font-size: x-large; color: coral; }
