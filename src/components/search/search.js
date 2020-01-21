@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Settings as settings, API_Lables as label } from '../../constants';
 import './search.css'
 
-export default function Search ({ data, changeMovieName }) {
+export default function Search ({ setMovieData }) {    
+    const [movieName, setMovieName] = useState('')
 
-    const updateFilters = value => {  
-        console.log(value)
-        // handleSearch(value)
+    const handleSubmit = e => {
+        e.preventDefault()
+
+        if (!movieName) return
+        setMovieData(movieName)
     }
 
     return (
@@ -17,10 +20,11 @@ export default function Search ({ data, changeMovieName }) {
                     type="text" 
                     className="search__input" 
                     placeholder="Type name to search ..."
-                    value={data.title}
-                    data-param={data}
-                    onChange={e => updateFilters(e.target.value)} />
-                <button className="search__button">Search</button>
+                    value={movieName}
+                    onChange={e => setMovieName(e.target.value)} />
+                <button 
+                    className="search__button"
+                    onClick={handleSubmit}>Search</button>
             </div>
         </section>
     )

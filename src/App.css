@@ -4,6 +4,8 @@
 
 section { margin: 10px 0; }
 
+.movies { display: flex; flex-wrap: wrap; width: 1000px; margin: 0 auto; padding: 10px 20px; }
+
 /* responsive
 ============================ */
 @media screen and (max-width: 1200px) {

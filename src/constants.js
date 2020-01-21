@@ -4,8 +4,8 @@ export const Settings = {
 }
 
 export const API_Lables = {
-    API_KEY: 'apikey',
-    TITLE: 's',
-    SEASON: 'Season',
-    EPISODE: 'Episode',
+    API_KEY: 'apikey=',
+    TITLE: '&s=',
+    SEASON: '&Season=',
+    EPISODE: '&Episode=',
 }
