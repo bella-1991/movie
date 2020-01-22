@@ -31,7 +31,7 @@ function App() {
       <Search setMovieData={setMovieData}  />
       <div className="movies">
         { allResults.map((eachMovie, index) => (
-          <Movie movie={eachMovie} />
+          <Movie movie={eachMovie} key={index} />
         ))}  
       </div>          
     </div>

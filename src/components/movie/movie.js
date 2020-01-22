@@ -11,7 +11,7 @@ export default function Movie ({ movie }) {
             <div className="movie__details-container">
                 <h2 className="movie__title">{movie.Title} ({movie.Year})</h2>
                 <p className="movie__type">Type: {movie.Type}</p>
-                <label className="movie__id">{movie.imdbID}</label>
+                <label className="movie__id">IMDB ID: {movie.imdbID}</label>
             </div>
         </div>
     )
