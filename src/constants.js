@@ -5,7 +5,22 @@ export const Settings = {
 
 export const API_Lables = {
     API_KEY: 'apikey=',
-    TITLE: '&s=',
+    SEARCH: '&s=',
     SEASON: '&Season=',
     EPISODE: '&Episode=',
+    TYPE: '&type=',
+    PAGE: '&page=',
+    TITLE: '&t='
+}
+
+export const DefaultFilters = {
+    TYPE: 'all',
+    SORT: 'ASCE',
+    PAGE: 1,
+    RPP: 10
+}
+
+export const ErrorLabels = {
+    NO_RESULTS: 'Please try again.',
+    NOT_AVAILABLE: 'Not Available'
 }
